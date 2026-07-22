@@ -95,10 +95,7 @@ const config = {
           },
         ],
       },
-      footer: {
-        style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} TongYang-Tech. Built with Docusaurus.`,
-      },
+      footer: {},
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
