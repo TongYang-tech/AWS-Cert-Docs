@@ -83,6 +83,11 @@ const config = {
             items: [
               {
                 type: "docSidebar",
+                sidebarId: "aws_accounts",
+                label: "AWS Account",
+              },
+              {
+                type: "docSidebar",
                 sidebarId: "aws_iam",
                 label: "AWS IAM",
               },
@@ -107,6 +112,17 @@ const config = {
         },
       }
     }),
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        indexBlog: false,
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      }
+    ]
+  ]
 };
 
 export default config;
