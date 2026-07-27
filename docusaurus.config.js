@@ -91,6 +91,11 @@ const config = {
                 sidebarId: "aws_iam",
                 label: "AWS IAM",
               },
+              {
+                type: "docSidebar",
+                sidebarId: "aws_ec2",
+                label: "AWS EC2",
+              }
             ],
           },
           {

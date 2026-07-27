@@ -1,6 +1,6 @@
 # Introduction
 
-An AWS account is a container for both identities (users) and resources
+An AWS account is a **container** for **both identities (users) and resources**
 (AWS EC2, AWS S3, and etc).
 
 Identities: Users who log in and manage the accounts
@@ -8,11 +8,11 @@ Resources: The infrastructure you build inside the cloud.
 
 # Creating AWS Accounts
 
-Once you create an account, a _root user_ is created and cannot be restricted.
+Once you create an account, a **root user** is created and cannot be restricted.
 
 # Billing
 
-Most services are "pay-as-you-go" model, usually by the minute.
+Most services are **pay-as-you-go** model, usually by the minute.
 
 # Security: Root Users and IAM
 
@@ -23,8 +23,8 @@ Most services are "pay-as-you-go" model, usually by the minute.
 
 ### IAM (Identity and Access Management)
 
-IAM allows you to create identities (users, groups, roles) within your AWS Account. IAM identities start
-with no permissions by default and permissions have to be created, allowing extra
+IAM allows you to create **identities (users, groups, roles)** within your AWS Account. IAM identities **start
+with no permissions by default** and permissions have to be created, allowing extra
 security.
 
 ### Cross-Account Permissions
