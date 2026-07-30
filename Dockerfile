@@ -2,7 +2,7 @@ FROM node:alpine3.23 AS base
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 
 RUN apk update \
-    && apk add --no-cache git \ #
+    && apk add --no-cache git \
     && rm -rf /var/cache/apk/*
 
 FROM base AS dep
