@@ -47,7 +47,7 @@ The core syntax for a policy statement is composed in the following:
 - Resource: Specifies the AWS resource (ARN) the policy applies to
 - Effect: Describes whether to `allow` or `deny`
 
-For more information, the policy reference is [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html)
+For more information, the policy reference is [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html). If you are using Terraform/OpenTofu, then more information is located [here](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document#statement).
 
 #### Effect: Allow or Deny
 
@@ -94,3 +94,5 @@ for individual entities.
 - Structure of policy statements
 - Evaluation Order for **allows** and **deny**
 - Inline and Managed Policies
+
+Link for the **Service Authorization Reference** is located [here](https://docs.aws.amazon.com/service-authorization/latest/reference/reference.html).
