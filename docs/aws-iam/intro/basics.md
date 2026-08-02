@@ -55,3 +55,42 @@ The `Effect` determines the behavior of the policy:
 
 - Allow: Grants permission to the action
 - Deny: Denies permission to prevent access
+
+### Policy Evaluation Order
+
+When an entity performs an action on AWS resource, AWS will evaluate all the policies attached to
+that entity as follows:
+
+1. Explicit Deny: If any policy explicitly access to a resource, that denial takes
+   precedence over any allows.
+2. Explicit Allow: If there is no deny, an explicit allow will grant access to
+   the resource.
+3. Implicity Deny: If no policy explicitly allows access, the default behavior
+   is to deny.
+
+Priority Order: **Deny** -> **Allow** -> **Deny**
+
+### Handling Multiple Policies
+
+An entity can have multiple policies attached, either directly (user policy) or through groups.
+AWS will collect all the policies that apply to a user or resource, then evaluates them
+using the policy evaluation order.
+
+### Inline vs Managed Policies
+
+#### Inline Policies
+
+**Inline policies** are directly attached to a specific entity (user, group, or role).
+These policies are **unique** to that entity. Used for exceptions or special access
+for individual entities.
+
+#### Managed Policies
+
+**Manged policies** are resuable policy documents that can be attached to multiple identities
+
+### Summary
+
+- IAM identity policies
+- Structure of policy statements
+- Evaluation Order for **allows** and **deny**
+- Inline and Managed Policies

@@ -9,8 +9,6 @@ import styles from './index.module.css';
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      description="Description will go into a meta tag in <head />">
-    </Layout>
+    <Layout description="Description will go into a meta tag in <head />"></Layout>
   );
 }

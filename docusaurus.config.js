@@ -72,7 +72,7 @@ const config = {
         title: '',
         items: [
           {
-            to: '/docs/intro',
+            to: '/notes/docs/intro',
             label: 'AWS Notes',
             position: 'left',
           },
