@@ -8,7 +8,7 @@ or a service account
 
 ### IAM Users Overview
 
-IAM users represent identities in AWS that requie long-term access
+IAM users represent identities in AWS that require long-term access
 
 - Humans: James, Mike, or Miles
 - Applications: A backup app running in a laptop
@@ -81,3 +81,16 @@ If need more than 5,000 identities then consider:
 
 - Use IAM roles: For applications, service accounts, or other AWS services
 - Identity Federation: For integrating existing identities from external identity providers
+
+#### Federation vs IAM Users
+
+- Large orgs or internet-scale apps, using federation or IAM roles is often the right solution
+
+## Summary of Key Points
+
+- IAM users are core entity to AWS. They represent humans, applications, or service accounts
+- IAM users are principles that will need to be authenticated and authorized in AWS to perform
+  actions to AWS resources.
+- Amazon Resource Names (ARNs) uniquely identity a resource in AWS.
+- Limit of 5,000 IAM users per account.
+- In most cases, use Federation or IAM roles for applications, services accounts, or other AWS services.

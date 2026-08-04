@@ -88,7 +88,7 @@ for individual entities.
 
 **Manged policies** are resuable policy documents that can be attached to multiple identities
 
-### Summary
+### Summary of Key Points
 
 - IAM identity policies
 - Structure of policy statements
